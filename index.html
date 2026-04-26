@@ -1,216 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Harkaran Singh Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+  <title>Harkaran Singh Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 <style>
 
-/* ABOUT */
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
 }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-.skill-mf .progress {
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-/* typing */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
   color: white;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
-/* zoom */
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(15,23,42,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 999;
 }
 
-.zoom-effect:hover {
-  transform: scale(1.1);
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #3b82f6;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 10%;
+  background:
+  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+  url('https://images.unsplash.com/photo-1551288049-bebda4e38f71');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero img {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.hero img:hover {
+  transform: scale(1.12);
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin: 0;
+}
+
+.hero-text h3 {
+  color: #93c5fd;
+}
+
+/* SECTIONS */
+section {
+  padding: 90px 12%;
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 32px;
+  border-left: 5px solid #3b82f6;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 10px 25px rgba(59,130,246,0.2);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+/* BUTTON */
+a {
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 </style>
+</head>
 
-  </head>
+<body>
 
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<!-- NAV -->
+<nav>
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#impact">IMPACT</a></li>
+    <li><a href="#experience">EXPERIENCE</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#education">EDUCATION</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
 
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark site-navbar-target">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Harkaran Singh</a>
-    </div>
-  </nav>
+<!-- HERO -->
+<section id="home" class="hero">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="row d-flex align-items-center">
+  <img src="Harkaran_DP.jpg">
 
-        <div class="col-md-6">
-          <img src="Harkaran_DP.jpg" style="width:300px;border-radius:50%;">
-        </div>
+  <div class="hero-text">
+    <h1>Harkaran Singh</h1>
+    <h3>Data Analyst</h3>
+    <p>2+ Years Experience in Data Analytics</p>
+    <p>SQL | Python | Power BI | Business Intelligence</p>
+  </div>
 
-        <div class="col-md-6">
-          <h1>I'm <span>Harkaran Singh</span></h1>
+</section>
 
-          <span id="typing-animation"></span>
+<!-- ABOUT -->
+<section id="about">
+  <h2>ABOUT</h2>
 
-          <script>
-            const typingAnimationElement = document.getElementById('typing-animation');
+  <div class="card">
+    Data Analyst with strong experience in transforming raw data into business insights.
+    Worked with industrial datasets from Maruti Suzuki and Rail Coach Factory.
+  </div>
+</section>
 
-            const typingTexts = [
-              'Data Analyst ',
-              'SQL Developer ',
-              'Power BI Developer '
-            ];
+<!-- IMPACT -->
+<section id="impact">
+  <h2>IMPACT</h2>
 
-            function playTypingAnimation(text) {
-              for (let i = 0; i < text.length; i++) {
-                setTimeout(() => {
-                  typingAnimationElement.textContent += text[i];
-                }, i * 200);
-              }
+  <div class="grid">
+    <div class="card"><h3>15,000+</h3><p>Daily records analyzed</p></div>
+    <div class="card"><h3>25%</h3><p>KPI accuracy improvement</p></div>
+    <div class="card"><h3>20+</h3><p>Business metrics tracked</p></div>
+    <div class="card"><h3>2+</h3><p>Years experience</p></div>
+  </div>
+</section>
 
-              setTimeout(() => {
-                typingAnimationElement.textContent = '';
-                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-              }, text.length * 200);
-            }
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>EXPERIENCE</h2>
 
-            playTypingAnimation(typingTexts[0]);
-          </script>
-
-          <h2>Data Analyst | 2+ Years Experience</h2>
-
-          <p>
-            <a href="#projects">Projects</a>
-            <a href="mailto:hssm15509@gmail.com">Email</a>
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about-section">
-    <h2>About Me</h2>
-
-    <p>
-      I am Harkaran Singh, a Data Analyst with 2+ years of experience in data analysis through internships and academic projects.
-    </p>
-
-    <p>
-      I worked at Maruti Suzuki and Rail Coach Factory (RCF), handling large-scale datasets and reporting systems.
-    </p>
-
-    <p>
-      At Maruti Suzuki, I analyzed 15,000+ daily records, improved KPI accuracy by 25%, and built dashboards tracking 20+ metrics.
-    </p>
-
-    <p>
-      At RCF, I processed 10,000+ records, improved reporting accuracy by 20%, and reduced manual reporting effort by 25%.
-    </p>
-
-    <p>
-      Skilled in SQL, Python, and Power BI for data-driven decision-making.
-    </p>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience-section">
-
-    <h2>Experience</h2>
-
-    <h3>Maruti Suzuki</h3>
-    <p>Data Analyst (09/2021 – 10/2023)</p>
+  <div class="card">
+    <b>Maruti Suzuki | Data Analyst (2021–2023)</b>
     <ul>
-      <li>Analyzed 15,000+ records improving KPI accuracy by 25%</li>
-      <li>Built Power BI dashboards with 20+ metrics</li>
-      <li>Improved operational efficiency by 15%</li>
-      <li>Improved data accuracy by 20%</li>
-      <li>Delivered insights to stakeholders</li>
+      <li>Analyzed 15,000+ daily records using SQL & Python</li>
+      <li>Improved KPI accuracy by 25%</li>
+      <li>Built Power BI dashboards (20+ KPIs)</li>
+      <li>Improved efficiency by 15%</li>
     </ul>
+  </div>
 
-    <h3>Rail Coach Factory (RCF)</h3>
-    <p>Data Analyst Intern (04/2021 – 09/2021)</p>
+  <div class="card">
+    <b>Rail Coach Factory | Data Analyst Intern (2021)</b>
     <ul>
-      <li>Processed 10,000+ records improving accuracy by 20%</li>
-      <li>Reduced reporting time by 25%</li>
-      <li>Improved workflow efficiency by 15%</li>
-      <li>Delivered reports improving operations by 18%</li>
+      <li>Processed 10,000+ records daily</li>
+      <li>Improved reporting efficiency by 25%</li>
+      <li>Built dashboards for 3 departments</li>
     </ul>
+  </div>
+</section>
 
-  </section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>PROJECTS</h2>
 
-  <!-- EDUCATION -->
-  <section id="education-section">
-    <h2>Education</h2>
+  <div class="card">Power BI Sales Dashboard</div>
+  <div class="card">SQL Customer Segmentation</div>
+  <div class="card">Python Sales Analysis</div>
+  <div class="card">Inventory Optimization Model</div>
+</section>
 
-    <p>University of Windsor (2023–2025) - MEng Mechanical Engineering</p>
-    <p>NIT Jalandhar (2018–2022) - BTech Mechanical Engineering</p>
+<!-- EDUCATION -->
+<section id="education">
+  <h2>EDUCATION</h2>
 
-  </section>
+  <div class="card">University of Windsor — MEng Mechanical (2023–2025)</div>
+  <div class="card">NIT Jalandhar — BTech Mechanical (2018–2022)</div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
+<!-- CONTACT -->
+<section id="contact">
+  <h2>CONTACT</h2>
 
-    <h2>Projects</h2>
+  <div class="card">
+    📧 Email: 
+    <a href="mailto:hssm15509@gmail.com" style="color:#3b82f6;">
+      hssm15509@gmail.com
+    </a>
+  </div>
 
-    <p>Customer Behaviour Analysis - SQL insights on customer data</p>
-    <p>Sales Dashboard - Power BI visualization of business KPIs</p>
-    <p>SQL Data Cleaning - cleaned 10,000+ records</p>
-    <p>API Data Analysis - Python-based real-time analysis</p>
+  <div class="card">
+    🔗 LinkedIn: 
+    <a href="https://www.linkedin.com/in/harkaran-singh-aa270b292" target="_blank" style="color:#3b82f6;">
+      www.linkedin.com/in/harkaran-singh-aa270b292
+    </a>
+  </div>
 
-  </section>
+  <div class="card">
+    📍 Location: Toronto, Canada
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact-section">
-    <h2>Contact</h2>
-
-    <p>Email: <a href="mailto:hssm15509@gmail.com">hssm15509@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/harkaran-singh-aa270b292">Profile</a></p>
-
-  </section>
-
-  </body>
+</body>
 </html>
