@@ -1,4 +1,4 @@
-# harkaran-portfolio
+# Harkaran-Portfolio
 👨‍💻 About Me
 
 Hi, I’m Harkaran 👋
